@@ -1,0 +1,21 @@
+{
+
+    "manifest_version": 2,
+    "name": "Zoom Tab Close",
+    "version": "1.0",
+  
+    "description": "Auto-closes Zoom videoconferencing tabs when a meeting is successfully joined.",
+
+    "icons": {
+        "48": "icons/baseline_close_black_24dp.png"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "permissions": [
+        "tabs"
+    ]
+  
+  }
