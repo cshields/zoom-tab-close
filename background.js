@@ -3,8 +3,10 @@
 var regex = /^((http[s]?):\/)?\/?((\/\w+)*)(.*)(zoom.us)((\/\w+)*\/)(.*)?status=success$/
 
 function closeZoomTab(tabId, changeInfo, tab) {
-    if (regex.test(tab.title)) {
-        browser.tabs.remove(tabId);
+    if (changeInfo.url) {
+        if (regex.test(changeInfo.url)) {
+            browser.tabs.remove(tabId);
+        }
     }
 }
 
