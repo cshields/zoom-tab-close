@@ -5,3 +5,7 @@ When joining a Zoom meeting via a browser click, the desktop app is launched. Th
 This addon closes those tabs automatically as soon as they redirect to "status=success"
 
 I am not a seasoned addon dev.. Please fork it, fix it, PR it.
+
+## Changelog
+
+v1.2 - update the "success" url pattern matching with a recent zoom change. Kudos to @aocole
